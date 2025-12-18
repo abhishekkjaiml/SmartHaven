@@ -1,0 +1,564 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+body {
+  background: #f7f9fc;
+  color: #111;
+}
+
+
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+}
+
+/* ================= LOGIN / SIGNUP WRAPPER ================= */
+.login-wrapper {
+  min-height: 100vh;
+  background: #f6f9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= CARD ================= */
+.login-card {
+  width: 420px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 40px 36px;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
+  text-align: center;
+}
+
+/* ================= HEADING ================= */
+.login-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #64748b;
+  margin-bottom: 28px;
+}
+
+/* ================= INPUT ================= */
+.login-card input {
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  padding: 0 16px;
+  font-size: 15px;
+  background: #f1f5f9;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.login-card input::placeholder {
+  color: #94a3b8;
+}
+
+.login-card input:focus {
+  box-shadow: 0 0 0 2px #3b82f6;
+}
+
+/* ================= ERROR TEXT ================= */
+.error-text {
+  text-align: left;
+  color: #dc2626;
+  font-size: 13px;
+  margin: -6px 0 14px 4px;
+}
+
+/* ================= SIGN BUTTON ================= */
+.sign-btn {
+  width: 100%;
+  height: 48px;
+  border-radius: 14px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.sign-btn:hover {
+  background: #2563eb;
+}
+
+.sign-btn:active {
+  transform: translateY(1px);
+}
+
+/* ================= SWITCH TEXT ================= */
+.switch {
+  margin-top: 22px;
+  font-size: 14px;
+  color: #475569;
+}
+
+.switch a {
+  color: #3b82f6;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .login-card {
+    width: 92%;
+    padding: 32px 24px;
+  }
+
+  .login-card h2 {
+    font-size: 22px;
+  }
+}
+
+
+
+
+/* ================= APP LAYOUT ================= */
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+  width: 240px;
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 4px 0 30px rgba(0, 0, 0, 0.05);
+}
+
+.logo-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #2563eb;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 16px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: #444;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.sidebar a.active {
+  background: #eef4ff;
+  color: #2563eb;
+}
+
+.logout-btn {
+  margin-top: 40px;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* ================= CONTENT ================= */
+.content {
+  flex: 1;
+  padding: 32px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+/* ================= DASHBOARD DITTO ================= */
+
+.dashboard-page {
+  max-width: 1100px;
+}
+
+.dashboard-header h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.dashboard-header p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Claim Device Card */
+.claim-card {
+  margin-top: 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+.claim-card h3 {
+  margin-bottom: 14px;
+}
+
+.claim-row {
+  display: flex;
+  gap: 14px;
+}
+
+.claim-row input {
+  flex: 1;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: none;
+  background: #f1f5f9;
+  font-size: 14px;
+}
+
+.claim-row button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  border: none;
+  background: #3b82f6;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Section */
+.section-title {
+  margin: 28px 0 16px;
+}
+
+/* Sensor Grid */
+.sensor-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Sensor Card */
+.sensor-card-ditto {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Icon circle */
+.sensor-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* Icon colors (exact vibe) */
+.sensor-icon.temp {
+  background: #ffeae5;
+  color: #f97316;
+}
+.sensor-icon.humidity {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+.sensor-icon.h2 {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+.sensor-icon.co {
+  background: #fee2e2;
+  color: #dc2626;
+}
+.sensor-icon.ch4 {
+  background: #dcfce7;
+  color: #16a34a;
+}
+.sensor-icon.aqi {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.sensor-info p {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.sensor-info h4 {
+  font-size: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .sensor-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .sensor-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .claim-row {
+    flex-direction: column;
+  }
+
+  .claim-row button {
+    justify-content: center;
+  }
+}
+
+
+/* ================= ROOMS DITTO ================= */
+
+.rooms-page {
+  max-width: 1100px;
+}
+
+.rooms-header h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.rooms-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Grid */
+.rooms-grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+/* Room Card */
+.room-card-ditto {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.room-card-ditto:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon */
+.room-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* Icon Colors (match image vibe) */
+.room-icon.living {
+  background: #e8f0ff;
+  color: #2563eb;
+}
+.room-icon.bedroom {
+  background: #f3e8ff;
+  color: #9333ea;
+}
+.room-icon.kitchen {
+  background: #ffedd5;
+  color: #f97316;
+}
+.room-icon.bathroom {
+  background: #e0f2fe;
+  color: #0284c7;
+}
+.room-icon.garage {
+  background: #f1f5f9;
+  color: #64748b;
+}
+.room-icon.office {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+/* Text */
+.room-info h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.room-info p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .rooms-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .rooms-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ================= SETTINGS DITTO ================= */
+
+.settings-page {
+  max-width: 1100px;
+}
+
+.settings-header h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.settings-header p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Profile Card */
+.profile-card-ditto {
+  margin-top: 26px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 26px;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, 0.06);
+}
+
+.profile-card-ditto h3 {
+  margin-bottom: 18px;
+}
+
+/* Top profile row */
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 22px;
+}
+
+.profile-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: #e8f0ff;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.profile-top h4 {
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+
+.profile-top p {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Fields */
+.profile-field {
+  background: #f3f6f9;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field-label {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.field-value {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* Logout Button */
+.logout-ditto {
+  margin-top: 28px;
+  background: #fee2e2;
+  color: #dc2626;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-field {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+
+

@@ -1,0 +1,193 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* ================= BACKGROUND ================= */
+.signup-wrapper {
+  min-height: 100vh;
+  background: radial-gradient(
+    1200px 900px at 70% 15%,
+    #114f47 0%,
+    #0b2f36 35%,
+    #061820 65%,
+    #031116 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= CARD ================= */
+.signup-card {
+  width: 380px;
+  padding: 36px 32px 32px;
+  border-radius: 22px;
+  background: rgba(14, 34, 44, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 40px 90px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  color: #e6f5f5;
+}
+
+/* ================= LOGO ================= */
+.signup-logo-box {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: rgba(46, 229, 209, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.signup-logo-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 2px solid #2ee5d1;
+}
+
+/* ================= TEXT ================= */
+.signup-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2ee5d1;
+  margin-bottom: 6px;
+}
+
+.signup-subtitle {
+  font-size: 13px;
+  color: #a8dede;
+  margin-bottom: 26px;
+  line-height: 1.4;
+}
+
+/* ================= INPUTS ================= */
+.signup-input-group {
+  height: 52px;
+  background: #1c3542;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  margin-bottom: 14px;
+}
+
+.signup-input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e6f5f5;
+  font-size: 14px;
+}
+
+.signup-input-group input::placeholder {
+  color: #8fbcbc;
+}
+
+/* Icons (visual only, same look as login) */
+.signup-input-icon {
+  width: 16px;
+  height: 16px;
+  background: rgba(200, 240, 240, 0.5);
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.signup-input-icon.eye {
+  margin-left: 10px;
+  opacity: 0.5;
+}
+
+/* ================= ERROR MESSAGE ================= */
+.signup-error {
+  margin: 6px 0 14px;
+  font-size: 12px;
+  color: #ff6b6b;
+  text-align: left;
+  padding-left: 6px;
+}
+
+/* ================= SIGN UP BUTTON ================= */
+.signup-btn {
+  width: 100%;
+  height: 52px;
+  border-radius: 18px;
+  border: none;
+  background: linear-gradient(90deg, #2ee5d1 0%, #2bc4ff 100%);
+  color: #012;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  margin: 18px 0 22px;
+}
+
+.signup-btn:hover {
+  filter: brightness(1.05);
+}
+
+/* ================= DIVIDER ================= */
+.signup-divider {
+  font-size: 12px;
+  color: #8fbcbc;
+  margin-bottom: 14px;
+}
+
+/* ================= SOCIAL BUTTONS ================= */
+.signup-social {
+  width: 100%;
+  height: 52px;
+  border-radius: 18px;
+  background: #223a47;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+}
+
+.signup-social:hover {
+  background: #284453;
+}
+
+.signup-social img {
+  width: 18px;
+  height: 18px;
+}
+
+/* ================= LOGIN LINK ================= */
+.signup-login {
+  font-size: 13px;
+  margin-top: 14px;
+}
+
+.signup-login span {
+  color: #2ee5d1;
+  cursor: pointer;
+}
+
+/* ================= FOOTER ================= */
+.signup-footer {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #7fa8a8;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 420px) {
+  .signup-card {
+    width: 92%;
+    padding: 32px 26px;
+  }
+}
