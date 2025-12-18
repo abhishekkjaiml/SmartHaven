@@ -22,40 +22,40 @@ body {
 }
 
 /* ================= LOGIN / SIGNUP WRAPPER ================= */
-.login-wrapper {
+/* .login-wrapper {
   min-height: 100vh;
   background: #f6f9fc;
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* ================= CARD ================= */
-.login-card {
+/* .login-card {
   width: 420px;
   background: #ffffff;
   border-radius: 18px;
   padding: 40px 36px;
   box-shadow: 0 25px 60px rgba(15, 23, 42, 0.12);
   text-align: center;
-}
+} */
 
 /* ================= HEADING ================= */
-.login-card h2 {
+/* .login-card h2 {
   font-size: 26px;
   font-weight: 700;
   color: #0f172a;
   margin-bottom: 6px;
-}
+} */
 
-.subtitle {
+/* .subtitle {
   font-size: 14px;
   color: #64748b;
   margin-bottom: 28px;
-}
+} */
 
 /* ================= INPUT ================= */
-.login-card input {
+/* .login-card input {
   width: 100%;
   height: 48px;
   border-radius: 12px;
@@ -66,26 +66,26 @@ body {
   background: #f1f5f9;
   color: #0f172a;
   margin-bottom: 16px;
-}
+} */
 
-.login-card input::placeholder {
+/* .login-card input::placeholder {
   color: #94a3b8;
 }
 
 .login-card input:focus {
   box-shadow: 0 0 0 2px #3b82f6;
-}
+} */
 
 /* ================= ERROR TEXT ================= */
-.error-text {
+/* .error-text {
   text-align: left;
   color: #dc2626;
   font-size: 13px;
   margin: -6px 0 14px 4px;
-}
+} */
 
 /* ================= SIGN BUTTON ================= */
-.sign-btn {
+/* .sign-btn {
   width: 100%;
   height: 48px;
   border-radius: 14px;
@@ -97,15 +97,147 @@ body {
   cursor: pointer;
   margin-top: 6px;
   transition: background 0.2s ease, transform 0.1s ease;
-}
+} */
 
-.sign-btn:hover {
+/* .sign-btn:hover {
   background: #2563eb;
 }
 
 .sign-btn:active {
   transform: translateY(1px);
+} */
+
+/* Start Here */
+
+/* Wrapper */
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  padding: 20px;
 }
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #020617;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+  border: 1px solid #1e293b;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Title */
+.login-card h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f8fafc;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #94a3b8;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border-radius: 12px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  color: #f8fafc;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.login-card input::placeholder {
+  color: #64748b;
+}
+
+.login-card input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+/* Button */
+.sign-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border: none;
+  color: #020617;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.sign-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.35);
+}
+
+.sign-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Error */
+.error-text {
+  margin-top: 6px;
+  margin-bottom: 4px;
+  color: #f87171;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* Switch link */
+.switch {
+  margin-top: 22px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.switch a {
+  color: #38bdf8;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.switch a:hover {
+  text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* End Here */
 
 /* ================= SWITCH TEXT ================= */
 .switch {
