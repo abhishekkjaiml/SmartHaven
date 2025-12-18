@@ -36,7 +36,7 @@ export default function Login() {
   return (
     <div className="login-wrapper">
       <div className="login-card">
-        <h2>AIR NEST HOME</h2>
+        <h2>SmartHaven</h2>
         <p className="subtitle">Sign in to your smart home</p>
 
         <input

@@ -12,7 +12,7 @@ export default function SidebarLayout() {
   return (
     <div className="app-layout">
       <aside className="sidebar">
-        <h2 className="logo-text">AirNest Home</h2>
+        <h2 className="logo-text">SmartHaven</h2>
         {/* Home Harmony */}
 
         <NavLink to="/dashboard">Dashboard</NavLink>

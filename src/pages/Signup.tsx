@@ -40,7 +40,7 @@ export default function Signup() {
     <div className="login-wrapper">
       <div className="login-card">
         <h2>Create Account</h2>
-        <p className="subtitle">Join Air Nest Home</p>
+        <p className="subtitle">Join SmartHaven</p>
 
         <input
           type="email"
