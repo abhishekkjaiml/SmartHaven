@@ -324,7 +324,3 @@ If you found this project helpful, please consider giving it a **Star ⭐**.
 It helps support future development and encourages new open-source contributions.
 
 ---
-
-# 📄 License
-
-This project is licensed under the **MIT License**.
